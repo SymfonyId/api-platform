@@ -4,6 +4,24 @@ parameters:
 #    parameter_name: value
 
 services:
+# Examples of API resource mapping, learn more at
+# https://github.com/dunglas/DunglasJsonLdApiBundle
+    resource.book:
+        class:     "Dunglas\JsonLdApiBundle\JsonLd\Resource"
+        arguments: [ "AppBundle\\Entity\\Book" ]
+        tags:      [ { name: "json-ld.resource" } ]
+
+    resource.person:
+        class:     "Dunglas\JsonLdApiBundle\JsonLd\Resource"
+        arguments: [ "AppBundle\\Entity\\Person" ]
+        tags:      [ { name: "json-ld.resource" } ]
+
+    resource.organization:
+        class:     "Dunglas\JsonLdApiBundle\JsonLd\Resource"
+        arguments: [ "AppBundle\\Entity\\Organization" ]
+        tags:      [ { name: "json-ld.resource" } ]
+
+# A typical service
 #    service_name:
 #        class: AppBundle\Directory\ClassName
 #        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]

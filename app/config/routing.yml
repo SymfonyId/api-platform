@@ -1,3 +1,6 @@
-app:
-    resource: @AppBundle/Controller/
-    type:     annotation
+api_doc:
+    resource: "@DunglasJsonLdApiBundle/Resources/config/routing.xml"
+
+api:
+    resource: "."
+    type:     "json-ld"
