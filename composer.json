@@ -14,7 +14,7 @@
     ],
     "require": {
         "php": ">=5.5.0",
-        "symfony/symfony": "~2.6",
+        "symfony/symfony": "2.6.*",
         "symfony/serializer": "~2.7@dev",
         "doctrine/orm": "~2.2,>=2.2.3,<2.5",
         "doctrine/dbal": "<2.5",
@@ -38,7 +38,8 @@
         "behat/mink": "~1.5",
         "behat/mink-extension": "~2.0",
         "behat/mink-browserkit-driver": "~1.1",
-        "behatch/contexts": "~2.2"
+        "behatch/contexts": "~2.2",
+        "hautelook/alice-bundle": "~0.2"
     },
     "scripts": {
         "post-root-package-install": [

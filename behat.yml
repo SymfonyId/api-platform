@@ -2,7 +2,7 @@ default:
   suites:
     default:
       contexts:
-        - FeatureContext
+        - FeatureContext: { doctrine: "@doctrine" }
         - Behat\MinkExtension\Context\MinkContext
         - Sanpi\Behatch\Context\RestContext
         - Sanpi\Behatch\Context\JsonContext

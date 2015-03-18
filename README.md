@@ -1,5 +1,5 @@
 Dunglas's API platform
-=======================
+======================
 
 Welcome to Dunglas's API platform - a fully-functional Symfony2
 application that you can use as the skeleton to build a hypermedia
@@ -12,7 +12,7 @@ Install
 
 Use [Composer][3] to create your new project:
 
-    composer create-project dunglas/api-platform my-api
+    composer create-project dunglas/api-platform --stability=dev my-api
 
 Start to hack
 -------------
