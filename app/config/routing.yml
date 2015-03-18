@@ -4,3 +4,7 @@ api_doc:
 api:
     resource: "."
     type:     "json-ld"
+
+NelmioApiDocBundle:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix:   /doc

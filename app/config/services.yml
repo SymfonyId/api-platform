@@ -20,7 +20,7 @@ services:
         class:     "Dunglas\JsonLdApiBundle\JsonLd\Resource"
         arguments:
             - "AppBundle\\Entity\\Organization"
-            - [ { name: "name", name: "url" } ]                  # Filters
+            - [ { name: "name" }, { name: "url" } ] # Filters
         tags:      [ { name: "json-ld.resource" } ]
 
 # A typical service

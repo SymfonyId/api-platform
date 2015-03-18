@@ -16,6 +16,8 @@ parameters:
 
     locale:            en
 
+    cors_allow_origin: http://localhost
+
     api_name:          Your API name
     api_description:   The full description of your API
 
