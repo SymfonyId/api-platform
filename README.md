@@ -20,7 +20,7 @@ Start to hack
 A default application representing a bookstore is installed by default.
 
 * Run `bin/console server:start` and open `http://localhost:8000` in any
-  HTTP client to play it.
+  HTTP client to access the API.
 * Open `http://localhost:8000/doc` to read the HTML documentation an play
   with the sandbox.
 * Give a try to the [HydraConsole][4] client to leverage JSON-LD and Hydra
