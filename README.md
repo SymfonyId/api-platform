@@ -19,9 +19,14 @@ Start to hack
 
 A default application representing a bookstore is installed by default.
 
-Run `bin/console server:start` and open `http://localhost:8000` in any
-HTTP client to play it.
-Give a try to [HydraConsole][4] to leverage JSON-LD and Hydra features.
+* Run `bin/console server:start` and open `http://localhost:8000` in any
+  HTTP client to play it.
+* Open `http://localhost:8000/doc` to read the HTML documentation an play
+  with the sandbox.
+* Give a try to the [HydraConsole][4] client to leverage JSON-LD and Hydra
+  features.
+* Build your first custom client using Javascript, CORS headers are already
+  configured. 
 
 What's inside?
 --------------
@@ -32,11 +37,16 @@ Dunglas's API platform provides rock solid fundations to build your API:
 
   * **[Doctrine][6] ORM/DBAL**;
 
-  * [**PHP Schema**][7] to generate Doctrine entities (with Symfony
-    validation and extended PHPDoc) from [Schema.org][8] types.
 
   * [**DunglasJsonLdApiBundle**][9] to expose in minutes your entities as
     a JSON-LD and Hydra enabled hypermedia REST API.
+    
+  * [**NelmioApiDocBundle**][24] integrated with DunglasJsonLdApiBundle to
+    automatically generate a beautiful human-readable documentation and a
+    sandbox to test the API.
+
+  * [**PHP Schema**][7] to generate Doctrine entities (with Symfony
+    validation and extended PHPDoc) from [Schema.org][8] types.
 
   * [Behat][10] and [Behatch][11] configured to easily test the API.
 
@@ -55,6 +65,8 @@ It comes pre-configured with the following bundles:
     supporting JSON-LD and Hydra
 
   * [**NelmioCorsBundle**][12] - Support for CORS headers
+  
+  * [**NelmioApiDocBundle**][24] - Generates a human-readable documentation
 
   * [**FosHttpCacheBundle**][13] - Add powerful caching capacities, supports
     Varnish, Nginx a built-in PHP reverse proxy
@@ -126,3 +138,4 @@ Built by [Kévin Dunglas][23].
 [21]: https://github.com/lexik/LexikJWTAuthenticationBundle
 [22]: https://github.com/FriendsOfSymfony/FOSOAuthServerBundle
 [23]: http://dunglas.fr
+[24]: https://github.com/nelmio/NelmioApiDocBundle
