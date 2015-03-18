@@ -122,7 +122,7 @@ Built by [Kévin Dunglas][23].
 [5]:  http://symfony.com
 [6]:  http://doctrine-project.org
 [7]:  http://php-schema.dunglas.com
-[9]:  http://schema.org
+[8]:  http://schema.org
 [9]:  https://github.com/dunglas/DunglasJsonLdApiBundle
 [10]: http://behat.readthedocs.org
 [11]: https://github.com/Behatch/contexts
