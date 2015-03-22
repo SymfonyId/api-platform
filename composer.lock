@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6341809f0d609298ea04d77022ff548f",
+    "hash": "57fbc2652efe81e1ee2ea41b1731b5de",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -714,12 +714,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dunglas/DunglasJsonLdApiBundle.git",
-                "reference": "ab2cf8d9a5771e7abba2c5661f9d5a6c666d3775"
+                "reference": "68469c13aa85a2c514a878c89cc0de72de10267d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dunglas/DunglasJsonLdApiBundle/zipball/ab2cf8d9a5771e7abba2c5661f9d5a6c666d3775",
-                "reference": "ab2cf8d9a5771e7abba2c5661f9d5a6c666d3775",
+                "url": "https://api.github.com/repos/dunglas/DunglasJsonLdApiBundle/zipball/68469c13aa85a2c514a878c89cc0de72de10267d",
+                "reference": "68469c13aa85a2c514a878c89cc0de72de10267d",
                 "shasum": ""
             },
             "require": {
@@ -729,7 +729,7 @@
                 "dunglas/php-property-info": "~0.2",
                 "php": ">=5.5",
                 "phpdocumentor/reflection": "^1.0.7",
-                "symfony/framework-bundle": "~2.5|~3.0",
+                "symfony/framework-bundle": "~2.6|~3.0",
                 "symfony/serializer": "~3.0|~2.7@dev",
                 "symfony/validator": "~2.5|~3.0"
             },
@@ -740,7 +740,8 @@
                 "behat/mink-extension": "~2.0",
                 "behat/symfony2-extension": "~2.0",
                 "behatch/contexts": "~2.2",
-                "phpspec/phpspec": "~2.0"
+                "phpspec/phpspec": "~2.0",
+                "symfony/symfony": "~2.7@dev"
             },
             "suggest": {
                 "friendsofsymfony/user-bundle": "To use the FOSUserBundle bridge."
@@ -775,7 +776,7 @@
                 "json",
                 "rest"
             ],
-            "time": "2015-03-18 10:31:11"
+            "time": "2015-03-22 18:03:11"
         },
         {
             "name": "dunglas/php-property-info",
@@ -1412,17 +1413,17 @@
         },
         {
             "name": "nelmio/api-doc-bundle",
-            "version": "dev-dunglasjsonldapibundle",
+            "version": "dev-master",
             "target-dir": "Nelmio/ApiDocBundle",
             "source": {
                 "type": "git",
-                "url": "https://github.com/dunglas/NelmioApiDocBundle.git",
-                "reference": "1de5d88a3903882f8d61046fc3907987ae216b59"
+                "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
+                "reference": "26fe302a5ad9d9465fcb3ee2a44f9f38533a3a45"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dunglas/NelmioApiDocBundle/zipball/1de5d88a3903882f8d61046fc3907987ae216b59",
-                "reference": "1de5d88a3903882f8d61046fc3907987ae216b59",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/26fe302a5ad9d9465fcb3ee2a44f9f38533a3a45",
+                "reference": "26fe302a5ad9d9465fcb3ee2a44f9f38533a3a45",
                 "shasum": ""
             },
             "require": {
@@ -1465,6 +1466,7 @@
                     "Nelmio\\ApiDocBundle": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1485,10 +1487,7 @@
                 "documentation",
                 "rest"
             ],
-            "support": {
-                "source": "https://github.com/dunglas/NelmioApiDocBundle/tree/dunglasjsonldapibundle"
-            },
-            "time": "2015-03-18 08:47:05"
+            "time": "2015-03-20 09:51:03"
         },
         {
             "name": "nelmio/cors-bundle",
@@ -2003,68 +2002,6 @@
             "time": "2015-01-04 20:21:17"
         },
         {
-            "name": "symfony/serializer",
-            "version": "2.7.x-dev",
-            "target-dir": "Symfony/Component/Serializer",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/Serializer.git",
-                "reference": "da4f997f8c700119d7fd51047dba463f61840aaa"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Serializer/zipball/da4f997f8c700119d7fd51047dba463f61840aaa",
-                "reference": "da4f997f8c700119d7fd51047dba463f61840aaa",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.9"
-            },
-            "require-dev": {
-                "doctrine/annotations": "~1.0",
-                "doctrine/cache": "~1.0",
-                "symfony/config": "~2.2|~3.0.0",
-                "symfony/phpunit-bridge": "~2.7|~3.0.0",
-                "symfony/property-access": "~2.3|~3.0.0",
-                "symfony/yaml": "~2.0|~3.0.0"
-            },
-            "suggest": {
-                "doctrine/annotations": "For using the annotation mapping. You will also need doctrine/cache.",
-                "doctrine/cache": "For using the default cached annotation reader and metadata cache.",
-                "symfony/config": "For using the XML mapping loader.",
-                "symfony/property-access": "For using the ObjectNormalizer.",
-                "symfony/yaml": "For using the default YAML mapping loader."
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.7-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\Serializer\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                }
-            ],
-            "description": "Symfony Serializer Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-03-17 12:50:07"
-        },
-        {
             "name": "symfony/swiftmailer-bundle",
             "version": "v2.3.8",
             "source": {
@@ -2123,25 +2060,26 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.6.5",
+            "version": "2.7.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "80833da9d04b004fa59fd23102e6dfad80c98106"
+                "reference": "6b025418809a76371d44c8afe5d09c46875789cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/80833da9d04b004fa59fd23102e6dfad80c98106",
-                "reference": "80833da9d04b004fa59fd23102e6dfad80c98106",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/6b025418809a76371d44c8afe5d09c46875789cb",
+                "reference": "6b025418809a76371d44c8afe5d09c46875789cb",
                 "shasum": ""
             },
             "require": {
                 "doctrine/common": "~2.3",
-                "php": ">=5.3.3",
+                "php": ">=5.3.9",
                 "psr/log": "~1.0",
-                "twig/twig": "~1.12,>=1.12.3"
+                "twig/twig": "~1.18"
             },
             "replace": {
+                "symfony/asset": "self.version",
                 "symfony/browser-kit": "self.version",
                 "symfony/class-loader": "self.version",
                 "symfony/config": "self.version",
@@ -2165,7 +2103,6 @@
                 "symfony/monolog-bridge": "self.version",
                 "symfony/options-resolver": "self.version",
                 "symfony/process": "self.version",
-                "symfony/propel1-bridge": "self.version",
                 "symfony/property-access": "self.version",
                 "symfony/proxy-manager-bridge": "self.version",
                 "symfony/routing": "self.version",
@@ -2197,17 +2134,23 @@
                 "monolog/monolog": "~1.11",
                 "ocramius/proxy-manager": "~0.4|~1.0",
                 "propel/propel1": "~1.6",
-                "symfony/phpunit-bridge": "~2.7"
+                "symfony/phpunit-bridge": "self.version"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.6-dev"
+                    "dev-master": "2.7-dev"
                 }
             },
             "autoload": {
                 "psr-0": {
-                    "Symfony\\": "src/"
+                    "Symfony\\Bridge\\Doctrine\\": "src/",
+                    "Symfony\\Bridge\\Monolog\\": "src/",
+                    "Symfony\\Bridge\\ProxyManager\\": "src/",
+                    "Symfony\\Bridge\\Swiftmailer\\": "src/",
+                    "Symfony\\Bridge\\Twig\\": "src/",
+                    "Symfony\\Bundle\\": "src/",
+                    "Symfony\\Component\\": "src/"
                 },
                 "classmap": [
                     "src/Symfony/Component/HttpFoundation/Resources/stubs",
@@ -2236,7 +2179,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2015-03-17 14:58:46"
+            "time": "2015-03-22 16:57:18"
         },
         {
             "name": "twig/extensions",
@@ -3050,16 +2993,16 @@
         },
         {
             "name": "fabpot/php-cs-fixer",
-            "version": "v1.5.1",
+            "version": "v1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer.git",
-                "reference": "85777ebc6a1dac48c904acf9412b29b58b5dd592"
+                "reference": "1dff3bb23fef67d62e266249cd3203b0aa025a7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/85777ebc6a1dac48c904acf9412b29b58b5dd592",
-                "reference": "85777ebc6a1dac48c904acf9412b29b58b5dd592",
+                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/1dff3bb23fef67d62e266249cd3203b0aa025a7e",
+                "reference": "1dff3bb23fef67d62e266249cd3203b0aa025a7e",
                 "shasum": ""
             },
             "require": {
@@ -3099,7 +3042,7 @@
                 }
             ],
             "description": "A script to automatically fix Symfony Coding Standard",
-            "time": "2015-03-13 19:33:24"
+            "time": "2015-03-22 12:52:15"
         },
         {
             "name": "fzaninotto/faker",
@@ -3480,7 +3423,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "symfony/serializer": 20,
+        "symfony/symfony": 20,
         "dunglas/json-ld-api-bundle": 20,
         "nelmio/api-doc-bundle": 20
     },
