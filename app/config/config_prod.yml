@@ -3,7 +3,12 @@ imports:
 
 #framework:
 #    validation:
-#        cache: apc
+#        cache: validator.mapping.cache.apc
+#    serializer:
+#        cache: serializer.mapping.cache.apc
+
+#dunglas_json_ld_api:
+#    cache: dunglas_json_ld_api.mapping.cache.apc
 
 #doctrine:
 #    orm:
