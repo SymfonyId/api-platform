@@ -1,9 +1,9 @@
 <?php
 
-
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Dunglas\JsonLdApiBundle\Annotation\Iri;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
@@ -12,11 +12,12 @@ use Symfony\Component\Validator\Constraints as Assert;
  * @see http://schema.org/Person Documentation on Schema.org
  *
  * @ORM\Entity
+ * @Iri("http://schema.org/Person")
  */
 class Person extends Thing
 {
     /**
-     * @var integer
+     * @var int
      *
      * @ORM\Column(type="integer")
      * @ORM\Id
@@ -26,22 +27,25 @@ class Person extends Thing
     /**
      * @var \DateTime Date of birth.
      *
-     * @Assert\Date
      * @ORM\Column(type="date", nullable=true)
+     * @Assert\Date
+     * @Iri("https://schema.org/birthDate")
      */
     private $birthDate;
     /**
      * @var string Gender of the person.
      *
-     * @Assert\Type(type="string")
      * @ORM\Column(nullable=true)
+     * @Assert\Type(type="string")
+     * @Iri("https://schema.org/gender")
      */
     private $gender;
 
     /**
      * Sets id.
      *
-     * @param  integer $id
+     * @param int $id
+     *
      * @return $this
      */
     public function setId($id)
@@ -54,7 +58,7 @@ class Person extends Thing
     /**
      * Gets id.
      *
-     * @return integer
+     * @return int
      */
     public function getId()
     {
@@ -64,7 +68,8 @@ class Person extends Thing
     /**
      * Sets birthDate.
      *
-     * @param  \DateTime $birthDate
+     * @param \DateTime $birthDate
+     *
      * @return $this
      */
     public function setBirthDate(\DateTime $birthDate = null)
@@ -87,7 +92,8 @@ class Person extends Thing
     /**
      * Sets gender.
      *
-     * @param  string $gender
+     * @param string $gender
+     *
      * @return $this
      */
     public function setGender($gender)

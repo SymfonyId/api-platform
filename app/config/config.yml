@@ -13,6 +13,7 @@ framework:
     form:            ~
     csrf_protection: ~
     validation:      { enable_annotations: true }
+    serializer:      { enable_annotations: true }
     templating:
         engines: ['twig']
         #assets_version: SomeVersionScheme
@@ -63,15 +64,13 @@ swiftmailer:
 dunglas_json_ld_api:
     title:       "%api_name%"
     description: "%api_description%"
-    default:
-        order: DESC
 
 # Nelmio CORS
 nelmio_cors:
     defaults:
         allow_origin:  ["%cors_allow_origin%"]
         allow_methods: ["POST", "PUT", "GET", "DELETE", "OPTIONS"]
-        allow_headers: ["content-type"]
+        allow_headers: ["content-type", "authorization"]
         max_age:       3600
 
 # Nelmio API Doc

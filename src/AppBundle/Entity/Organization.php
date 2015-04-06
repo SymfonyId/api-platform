@@ -1,9 +1,9 @@
 <?php
 
-
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Dunglas\JsonLdApiBundle\Annotation\Iri;
 
 /**
  * An organization such as a school, NGO, corporation, club, etc.
@@ -11,11 +11,12 @@ use Doctrine\ORM\Mapping as ORM;
  * @see http://schema.org/Organization Documentation on Schema.org
  *
  * @ORM\Entity
+ * @Iri("http://schema.org/Organization")
  */
 class Organization extends Thing
 {
     /**
-     * @var integer
+     * @var int
      *
      * @ORM\Column(type="integer")
      * @ORM\Id
@@ -26,7 +27,8 @@ class Organization extends Thing
     /**
      * Sets id.
      *
-     * @param  integer $id
+     * @param int $id
+     *
      * @return $this
      */
     public function setId($id)
@@ -39,7 +41,7 @@ class Organization extends Thing
     /**
      * Gets id.
      *
-     * @return integer
+     * @return int
      */
     public function getId()
     {

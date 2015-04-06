@@ -1,10 +1,10 @@
 <?php
 
-
 namespace AppBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
+use Dunglas\JsonLdApiBundle\Annotation\Iri;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
@@ -13,11 +13,12 @@ use Symfony\Component\Validator\Constraints as Assert;
  * @see http://schema.org/Book Documentation on Schema.org
  *
  * @ORM\Entity
+ * @Iri("http://schema.org/Book")
  */
 class Book extends CreativeWork
 {
     /**
-     * @var integer
+     * @var int
      *
      * @ORM\Column(type="integer")
      * @ORM\Id
@@ -28,20 +29,23 @@ class Book extends CreativeWork
      * @var ArrayCollection<Person> The illustrator of the book.
      *
      * @ORM\ManyToMany(targetEntity="Person")
+     * @Iri("https://schema.org/illustrator")
      */
     private $illustrator;
     /**
      * @var string The ISBN of the book.
      *
-     * @Assert\Type(type="string")
      * @ORM\Column(nullable=true)
+     * @Assert\Type(type="string")
+     * @Iri("https://schema.org/isbn")
      */
     private $isbn;
     /**
-     * @var integer The number of pages in the book.
+     * @var int The number of pages in the book.
      *
-     * @Assert\Type(type="integer")
      * @ORM\Column(type="integer", nullable=true)
+     * @Assert\Type(type="integer")
+     * @Iri("https://schema.org/numberOfPages")
      */
     private $numberOfPages;
 
@@ -55,7 +59,8 @@ class Book extends CreativeWork
     /**
      * Sets id.
      *
-     * @param  integer $id
+     * @param int $id
+     *
      * @return $this
      */
     public function setId($id)
@@ -68,7 +73,7 @@ class Book extends CreativeWork
     /**
      * Gets id.
      *
-     * @return integer
+     * @return int
      */
     public function getId()
     {
@@ -78,7 +83,8 @@ class Book extends CreativeWork
     /**
      * Adds illustrator.
      *
-     * @param  Person $illustrator
+     * @param Person $illustrator
+     *
      * @return $this
      */
     public function addIllustrator(Person $illustrator)
@@ -91,7 +97,8 @@ class Book extends CreativeWork
     /**
      * Removes illustrator.
      *
-     * @param  Person $illustrator
+     * @param Person $illustrator
+     *
      * @return $this
      */
     public function removeIllustrator(Person $illustrator)
@@ -117,7 +124,8 @@ class Book extends CreativeWork
     /**
      * Sets isbn.
      *
-     * @param  string $isbn
+     * @param string $isbn
+     *
      * @return $this
      */
     public function setIsbn($isbn)
@@ -140,7 +148,8 @@ class Book extends CreativeWork
     /**
      * Sets numberOfPages.
      *
-     * @param  integer $numberOfPages
+     * @param int $numberOfPages
+     *
      * @return $this
      */
     public function setNumberOfPages($numberOfPages)
@@ -153,7 +162,7 @@ class Book extends CreativeWork
     /**
      * Gets numberOfPages.
      *
-     * @return integer
+     * @return int
      */
     public function getNumberOfPages()
     {

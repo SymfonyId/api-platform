@@ -1,9 +1,9 @@
 <?php
 
-
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Dunglas\JsonLdApiBundle\Annotation\Iri;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
@@ -12,35 +12,40 @@ use Symfony\Component\Validator\Constraints as Assert;
  * @see http://schema.org/Thing Documentation on Schema.org
  *
  * @ORM\MappedSuperclass
+ * @Iri("http://schema.org/Thing")
  */
 abstract class Thing
 {
     /**
      * @var string A short description of the item.
      *
-     * @Assert\Type(type="string")
      * @ORM\Column(nullable=true)
+     * @Assert\Type(type="string")
+     * @Iri("https://schema.org/description")
      */
     private $description;
     /**
      * @var string The name of the item.
      *
-     * @Assert\Type(type="string")
      * @ORM\Column(nullable=true)
+     * @Assert\Type(type="string")
+     * @Iri("https://schema.org/name")
      */
     private $name;
     /**
      * @var string URL of the item.
      *
-     * @Assert\Url
      * @ORM\Column(nullable=true)
+     * @Assert\Url
+     * @Iri("https://schema.org/url")
      */
     private $url;
 
     /**
      * Sets description.
      *
-     * @param  string $description
+     * @param string $description
+     *
      * @return $this
      */
     public function setDescription($description)
@@ -63,7 +68,8 @@ abstract class Thing
     /**
      * Sets name.
      *
-     * @param  string $name
+     * @param string $name
+     *
      * @return $this
      */
     public function setName($name)
@@ -86,7 +92,8 @@ abstract class Thing
     /**
      * Sets url.
      *
-     * @param  string $url
+     * @param string $url
+     *
      * @return $this
      */
     public function setUrl($url)

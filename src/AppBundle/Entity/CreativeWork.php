@@ -1,10 +1,10 @@
 <?php
 
-
 namespace AppBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
+use Dunglas\JsonLdApiBundle\Annotation\Iri;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
@@ -13,6 +13,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  * @see http://schema.org/CreativeWork Documentation on Schema.org
  *
  * @ORM\MappedSuperclass
+ * @Iri("http://schema.org/CreativeWork")
  */
 abstract class CreativeWork extends Thing
 {
@@ -20,26 +21,30 @@ abstract class CreativeWork extends Thing
      * @var ArrayCollection<Person> The author of this content. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably.
      *
      * @ORM\ManyToMany(targetEntity="Person")
+     * @Iri("https://schema.org/author")
      */
     private $author;
     /**
      * @var \DateTime Date of first broadcast/publication.
      *
-     * @Assert\Date
      * @ORM\Column(type="date", nullable=true)
+     * @Assert\Date
+     * @Iri("https://schema.org/datePublished")
      */
     private $datePublished;
     /**
      * @var string Genre of the creative work or group.
      *
-     * @Assert\Type(type="string")
      * @ORM\Column(nullable=true)
+     * @Assert\Type(type="string")
+     * @Iri("https://schema.org/genre")
      */
     private $genre;
     /**
      * @var Organization The publisher of the creative work.
      *
      * @ORM\OneToOne(targetEntity="Organization")
+     * @Iri("https://schema.org/publisher")
      */
     private $publisher;
 
@@ -51,7 +56,8 @@ abstract class CreativeWork extends Thing
     /**
      * Adds author.
      *
-     * @param  Person $author
+     * @param Person $author
+     *
      * @return $this
      */
     public function addAuthor(Person $author)
@@ -64,7 +70,8 @@ abstract class CreativeWork extends Thing
     /**
      * Removes author.
      *
-     * @param  Person $author
+     * @param Person $author
+     *
      * @return $this
      */
     public function removeAuthor(Person $author)
@@ -90,7 +97,8 @@ abstract class CreativeWork extends Thing
     /**
      * Sets datePublished.
      *
-     * @param  \DateTime $datePublished
+     * @param \DateTime $datePublished
+     *
      * @return $this
      */
     public function setDatePublished(\DateTime $datePublished = null)
@@ -113,7 +121,8 @@ abstract class CreativeWork extends Thing
     /**
      * Sets genre.
      *
-     * @param  string $genre
+     * @param string $genre
+     *
      * @return $this
      */
     public function setGenre($genre)
@@ -136,7 +145,8 @@ abstract class CreativeWork extends Thing
     /**
      * Sets publisher.
      *
-     * @param  Organization $publisher
+     * @param Organization $publisher
+     *
      * @return $this
      */
     public function setPublisher(Organization $publisher = null)

@@ -4,8 +4,13 @@
 
 rdfa:
   - https://raw.githubusercontent.com/schemaorg/schemaorg/sdo-gozer/data/schema.rdfa
+annotationGenerators:
+    - SchemaOrgModel\AnnotationGenerator\PhpDocAnnotationGenerator
+    - SchemaOrgModel\AnnotationGenerator\DoctrineOrmAnnotationGenerator
+    - SchemaOrgModel\AnnotationGenerator\ConstraintAnnotationGenerator
+    - SchemaOrgModel\AnnotationGenerator\DunglasJsonLdApiAnnotationGenerator
 namespaces:
-  entity: "AppBundle\Entity"
+  entity: AppBundle\Entity
 types:
   Thing:
     properties:
