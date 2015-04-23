@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fb9ac8b3c9502b92d2b53ecacd1cabba",
+    "hash": "984d2b2d7557c54e06dda7219b3de43e",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -2964,16 +2964,16 @@
         },
         {
             "name": "dunglas/php-schema",
-            "version": "v0.4.1",
+            "version": "v0.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dunglas/php-schema.git",
-                "reference": "0fa11f101118bfdf7a4f58c277add212bb3c49f9"
+                "reference": "a0ad7b451b3fa8bf33a3b04342ec06f77a6d51e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dunglas/php-schema/zipball/0fa11f101118bfdf7a4f58c277add212bb3c49f9",
-                "reference": "0fa11f101118bfdf7a4f58c277add212bb3c49f9",
+                "url": "https://api.github.com/repos/dunglas/php-schema/zipball/a0ad7b451b3fa8bf33a3b04342ec06f77a6d51e0",
+                "reference": "a0ad7b451b3fa8bf33a3b04342ec06f77a6d51e0",
                 "shasum": ""
             },
             "require": {
@@ -3030,7 +3030,7 @@
                 "semantic",
                 "symfony"
             ],
-            "time": "2015-04-06 20:20:54"
+            "time": "2015-04-22 07:50:07"
         },
         {
             "name": "easyrdf/easyrdf",
