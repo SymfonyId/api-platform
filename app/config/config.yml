@@ -61,7 +61,7 @@ swiftmailer:
     spool:     { type: memory }
 
 # DunglasJsonLdApi configuration
-dunglas_json_ld_api:
+dunglas_api:
     title:       "%api_name%"
     description: "%api_description%"
 

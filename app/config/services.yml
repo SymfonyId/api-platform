@@ -8,20 +8,30 @@ services:
 # Examples of API resource mapping, learn more at
 # https://github.com/dunglas/DunglasJsonLdApiBundle
     resource.book:
-        class:     "Dunglas\JsonLdApiBundle\JsonLd\Resource"
+        parent:    "api.resource"
         arguments: [ "AppBundle\\Entity\\Book" ]
-        tags:      [ { name: "json-ld.resource" } ]
+        tags:      [ { name: "api.resource" } ]
 
     resource.person:
-        parent:    "dunglas_json_ld_api.resource"
+        parent:    "api.resource"
         arguments: [ "AppBundle\\Entity\\Person" ]
-        tags:      [ { name: "json-ld.resource" } ]
+        tags:      [ { name: "api.resource" } ]
 
     resource.organization:
-        parent:    "dunglas_json_ld_api.resource"
+        parent:    "api.resource"
         arguments: [ "AppBundle\\Entity\\Organization" ]
-        calls:     [ [ "initFilters", [ [ { name: "name" }, { name: "url" } ] ] ] ]
-        tags:      [ { name: "json-ld.resource" } ]
+        calls:
+            -      [ "addFilter", [ "@resource.organization.filter.name" ] ]
+            -      [ "addFilter", [ "@resource.organization.filter.url" ] ]
+        tags:      [ { name: "api.resource" } ]
+
+    resource.organization.filter.name:
+        parent:    "api.doctrine.orm.filter"
+        arguments: [ "name" ]
+
+    resource.organization.filter.url:
+        parent:    "api.doctrine.orm.filter"
+        arguments: [ "url", "partial" ] # Use the partial filtering strategy
 
 # A typical service
 #    service_name:

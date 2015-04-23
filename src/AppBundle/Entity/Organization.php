@@ -3,7 +3,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Dunglas\JsonLdApiBundle\Annotation\Iri;
+use Dunglas\ApiBundle\Annotation\Iri;
 
 /**
  * An organization such as a school, NGO, corporation, club, etc.
