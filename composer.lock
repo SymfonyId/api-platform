@@ -707,12 +707,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dunglas/DunglasApiBundle.git",
-                "reference": "64ec1494ef06dfdde954c9fa888b27dd559509b7"
+                "reference": "5a3170ed932510e20206a2b8a7edfdebbf335a6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dunglas/DunglasApiBundle/zipball/64ec1494ef06dfdde954c9fa888b27dd559509b7",
-                "reference": "64ec1494ef06dfdde954c9fa888b27dd559509b7",
+                "url": "https://api.github.com/repos/dunglas/DunglasApiBundle/zipball/5a3170ed932510e20206a2b8a7edfdebbf335a6d",
+                "reference": "5a3170ed932510e20206a2b8a7edfdebbf335a6d",
                 "shasum": ""
             },
             "require": {
@@ -773,7 +773,7 @@
                 "json",
                 "rest"
             ],
-            "time": "2015-04-23 19:51:37"
+            "time": "2015-04-30 06:57:24"
         },
         {
             "name": "dunglas/php-property-info",
@@ -1308,12 +1308,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "ad70ff96fa1f30b7478a68c06d8524d2d8a14be3"
+                "reference": "768f45641e577e712ed9b43b89a247fb6aea2d3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/ad70ff96fa1f30b7478a68c06d8524d2d8a14be3",
-                "reference": "ad70ff96fa1f30b7478a68c06d8524d2d8a14be3",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/768f45641e577e712ed9b43b89a247fb6aea2d3b",
+                "reference": "768f45641e577e712ed9b43b89a247fb6aea2d3b",
                 "shasum": ""
             },
             "require": {
@@ -1327,7 +1327,7 @@
                 "jms/serializer-bundle": "<0.11"
             },
             "require-dev": {
-                "dunglas/json-ld-api-bundle": "dev-master",
+                "dunglas/api-bundle": "dev-master",
                 "friendsofsymfony/rest-bundle": "~1.0",
                 "jms/serializer-bundle": ">=0.11",
                 "sensio/framework-extra-bundle": "~3.0",
@@ -1339,7 +1339,7 @@
                 "symfony/yaml": "~2.1"
             },
             "suggest": {
-                "dunglas/json-ld-api-bundle": "For making use of resources definitions of DunglasJsonLdApiBundle.",
+                "dunglas/api-bundle": "For making use of resources definitions of DunglasApiBundle.",
                 "friendsofsymfony/rest-bundle": "For making use of REST information in the doc.",
                 "jms/serializer": "For making use of serializer information in the doc.",
                 "symfony/form": "For using form definitions as input.",
@@ -1377,7 +1377,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2015-04-14 15:21:49"
+            "time": "2015-04-29 20:42:26"
         },
         {
             "name": "nelmio/cors-bundle",
