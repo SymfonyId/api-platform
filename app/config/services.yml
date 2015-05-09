@@ -21,17 +21,12 @@ services:
         parent:    "api.resource"
         arguments: [ "AppBundle\\Entity\\Organization" ]
         calls:
-            -      [ "addFilter", [ "@resource.organization.filter.name" ] ]
-            -      [ "addFilter", [ "@resource.organization.filter.url" ] ]
+            -      [ "addFilter", [ "@resource.organization.filter" ] ]
         tags:      [ { name: "api.resource" } ]
 
-    resource.organization.filter.name:
+    resource.organization.filter:
         parent:    "api.doctrine.orm.filter"
-        arguments: [ "name" ]
-
-    resource.organization.filter.url:
-        parent:    "api.doctrine.orm.filter"
-        arguments: [ "url", "partial" ] # Use the partial filtering strategy
+        arguments: [ { "name": "exact", "url": "partial" } ]
 
 # A typical service
 #    service_name:
