@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0c957a603c46ac1ddbba3dab11f23f11",
+    "hash": "cdc9de42c751ce0604567d0967ef89ce",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -707,12 +707,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dunglas/DunglasApiBundle.git",
-                "reference": "e475c99c5568185fdd25a7575b716bed205dd2cd"
+                "reference": "7658b196dc4fe906012a6f4ca70352769ef00d81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dunglas/DunglasApiBundle/zipball/e475c99c5568185fdd25a7575b716bed205dd2cd",
-                "reference": "e475c99c5568185fdd25a7575b716bed205dd2cd",
+                "url": "https://api.github.com/repos/dunglas/DunglasApiBundle/zipball/7658b196dc4fe906012a6f4ca70352769ef00d81",
+                "reference": "7658b196dc4fe906012a6f4ca70352769ef00d81",
                 "shasum": ""
             },
             "require": {
@@ -773,7 +773,7 @@
                 "json",
                 "rest"
             ],
-            "time": "2015-05-09 13:47:18"
+            "time": "2015-05-14 21:45:06"
         },
         {
             "name": "dunglas/php-property-info",
@@ -1308,12 +1308,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "f7611613af585ac4c6c2d04eb0d4db0f9d01fee0"
+                "reference": "94ba751848a40a1f238da71c5b3efc2a65b1da1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/f7611613af585ac4c6c2d04eb0d4db0f9d01fee0",
-                "reference": "f7611613af585ac4c6c2d04eb0d4db0f9d01fee0",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/94ba751848a40a1f238da71c5b3efc2a65b1da1f",
+                "reference": "94ba751848a40a1f238da71c5b3efc2a65b1da1f",
                 "shasum": ""
             },
             "require": {
@@ -1377,7 +1377,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2015-04-30 07:56:37"
+            "time": "2015-05-15 15:42:03"
         },
         {
             "name": "nelmio/cors-bundle",
@@ -2013,16 +2013,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.7.0-BETA1",
+            "version": "v2.7.0-BETA2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "07379d1d80594872bfbb7e9baad2cf7709c73102"
+                "reference": "5cfcce37fa070f7765559156634c9ef2724e9545"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/07379d1d80594872bfbb7e9baad2cf7709c73102",
-                "reference": "07379d1d80594872bfbb7e9baad2cf7709c73102",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/5cfcce37fa070f7765559156634c9ef2724e9545",
+                "reference": "5cfcce37fa070f7765559156634c9ef2724e9545",
                 "shasum": ""
             },
             "require": {
@@ -2086,7 +2086,6 @@
                 "ircmaxell/password-compat": "~1.0",
                 "monolog/monolog": "~1.11",
                 "ocramius/proxy-manager": "~0.4|~1.0",
-                "propel/propel1": "~1.6",
                 "symfony/phpunit-bridge": "self.version"
             },
             "type": "library",
@@ -2096,14 +2095,14 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Symfony\\Bridge\\Doctrine\\": "src/",
-                    "Symfony\\Bridge\\Monolog\\": "src/",
-                    "Symfony\\Bridge\\ProxyManager\\": "src/",
-                    "Symfony\\Bridge\\Swiftmailer\\": "src/",
-                    "Symfony\\Bridge\\Twig\\": "src/",
-                    "Symfony\\Bundle\\": "src/",
-                    "Symfony\\Component\\": "src/"
+                "psr-4": {
+                    "Symfony\\Bridge\\Doctrine\\": "src/Symfony/Bridge/Doctrine/",
+                    "Symfony\\Bridge\\Monolog\\": "src/Symfony/Bridge/Monolog/",
+                    "Symfony\\Bridge\\ProxyManager\\": "src/Symfony/Bridge/ProxyManager/",
+                    "Symfony\\Bridge\\Swiftmailer\\": "src/Symfony/Bridge/Swiftmailer/",
+                    "Symfony\\Bridge\\Twig\\": "src/Symfony/Bridge/Twig/",
+                    "Symfony\\Bundle\\": "src/Symfony/Bundle/",
+                    "Symfony\\Component\\": "src/Symfony/Component/"
                 },
                 "classmap": [
                     "src/Symfony/Component/HttpFoundation/Resources/stubs",
@@ -2119,20 +2118,20 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "The Symfony PHP framework",
-            "homepage": "http://symfony.com",
+            "homepage": "https://symfony.com",
             "keywords": [
                 "framework"
             ],
-            "time": "2015-04-10 19:52:02"
+            "time": "2015-05-13 20:25:22"
         },
         {
             "name": "twig/extensions",
@@ -2798,16 +2797,16 @@
         },
         {
             "name": "behatch/contexts",
-            "version": "2.2",
+            "version": "2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Behatch/contexts.git",
-                "reference": "eef7ab39ca896796bf3ba25a0fa5a95f15276eb7"
+                "reference": "67de9a82d08e7355628b8d1a707bddec13f945f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behatch/contexts/zipball/eef7ab39ca896796bf3ba25a0fa5a95f15276eb7",
-                "reference": "eef7ab39ca896796bf3ba25a0fa5a95f15276eb7",
+                "url": "https://api.github.com/repos/Behatch/contexts/zipball/67de9a82d08e7355628b8d1a707bddec13f945f2",
+                "reference": "67de9a82d08e7355628b8d1a707bddec13f945f2",
                 "shasum": ""
             },
             "require": {
@@ -2816,9 +2815,6 @@
                 "behat/mink-extension": "~2.0",
                 "justinrainbow/json-schema": "*",
                 "symfony/property-access": "~2.3"
-            },
-            "replace": {
-                "sanpi/behatch-skeleton": "self.version"
             },
             "require-dev": {
                 "atoum/atoum": "*@dev",
@@ -2843,7 +2839,7 @@
                 "Context",
                 "Symfony2"
             ],
-            "time": "2014-12-29 13:30:52"
+            "time": "2014-09-15 13:48:07"
         },
         {
             "name": "doctrine/data-fixtures",
@@ -2964,16 +2960,16 @@
         },
         {
             "name": "dunglas/php-schema",
-            "version": "v0.4.2",
+            "version": "v0.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dunglas/php-schema.git",
-                "reference": "a0ad7b451b3fa8bf33a3b04342ec06f77a6d51e0"
+                "reference": "4944d6465cfa9b7515dfbb3efcfcdccaa0d8157c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dunglas/php-schema/zipball/a0ad7b451b3fa8bf33a3b04342ec06f77a6d51e0",
-                "reference": "a0ad7b451b3fa8bf33a3b04342ec06f77a6d51e0",
+                "url": "https://api.github.com/repos/dunglas/php-schema/zipball/4944d6465cfa9b7515dfbb3efcfcdccaa0d8157c",
+                "reference": "4944d6465cfa9b7515dfbb3efcfcdccaa0d8157c",
                 "shasum": ""
             },
             "require": {
@@ -2990,8 +2986,8 @@
             },
             "require-dev": {
                 "doctrine/orm": "~2.2",
-                "dunglas/json-ld-api-bundle": "dev-master",
-                "symfony/serializer": "~2.7@dev",
+                "dunglas/api-bundle": "dev-master",
+                "symfony/serializer": "~2.7@beta",
                 "symfony/validator": "~2.6"
             },
             "suggest": {
@@ -3030,7 +3026,7 @@
                 "semantic",
                 "symfony"
             ],
-            "time": "2015-04-22 07:50:07"
+            "time": "2015-05-15 17:29:44"
         },
         {
             "name": "easyrdf/easyrdf",
