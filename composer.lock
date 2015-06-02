@@ -708,12 +708,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dunglas/DunglasApiBundle.git",
-                "reference": "0d9080ec131fa4057f96c685893ea5248cac5172"
+                "reference": "0b8098ee046f91dc3393ca2a4ade8c63cf2e15bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dunglas/DunglasApiBundle/zipball/0d9080ec131fa4057f96c685893ea5248cac5172",
-                "reference": "0d9080ec131fa4057f96c685893ea5248cac5172",
+                "url": "https://api.github.com/repos/dunglas/DunglasApiBundle/zipball/0b8098ee046f91dc3393ca2a4ade8c63cf2e15bc",
+                "reference": "0b8098ee046f91dc3393ca2a4ade8c63cf2e15bc",
                 "shasum": ""
             },
             "require": {
@@ -774,7 +774,7 @@
                 "json",
                 "rest"
             ],
-            "time": "2015-06-02 09:20:58"
+            "time": "2015-06-02 15:36:38"
         },
         {
             "name": "dunglas/php-property-info",

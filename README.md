@@ -7,36 +7,40 @@ Dunglas's API platform
 the end of June 2015**
 
 Dunglas's API platform is a next-generation PHP web framework designed to create
-API-first projects easily but without compromise with extensibility and flexibility:
+API-first projects easily but without compromise in the field of extensibility and
+flexibility:
 - Use our awesome code generator to **bootstrap a fully-functional data model from
 [Schema.org][8] vocabularies** with ORM mapping and validation (you can also do it
 manually)
-- **Expose in minutes an hypermedia REST API** that works out of the box by taking care
-of entity metadata (ORM mapping and validation) ; that embraces [JSON-LD][1] and [Hydra][2]
-and provides a ton of features (CRUD, validation and error handling, relation
-embedding, filters, ordering...)
+- **Expose in minutes an hypermedia REST API** that works out of the box by reusing
+  entity metadata (ORM mapping, validation and serialization) ; that embraces [JSON-LD][1]
+  and [Hydra][2] and provides a ton of features (CRUD, validation and error handling,
+  relation embedding, filters, ordering...)
 - Enjoy the **beautiful automatically generated API documentation** (Swagger-like)
-- Add **[JWT][25] or [OAuth][26] authentication** to your API
-- Create tests with a **user friendly API testing system** on top of [Behat][10]
-- Develop your client applications using **your preferred technologies**! Tested and
-approved with **AngularJS** (integration included), **Ionic**, **React** and **native
-mobile** apps
+- Add easily **[JSON Web Token][25] or [OAuth][26] authentication**
+- Create specs and tests with a **developer friendly API context system** on top
+  of [Behat][10]
+- Develop your website UI, webapp, mobile app or anything else you want using
+  **your preferred client-side technologies**! Tested and approved with **AngularJS**
+  (integration included), **Ionic**, **React** and **native mobile** apps
 
 Dunglas's API platform embraces open web standards (JSON-LD, Hydra, JWT, OAuth,
-HTTP, HTML5...) and the [Linked Data][27] movement. It means than your Dunglas's
-API platform application is compliant **out of the box** with the semantic web.
-**Google will takes care automatically** of structured data exposed by the application
-(and yes, Google indexes full-Javascript applications as well as old-fashioned ones).
-Your SEO will be improved.
+HTTP, HTML5...) and the [Linked Data][27] movement. Your API will automatically
+expose structured data in Schema.org/JSON-LD. It means that your Dunglas's API
+platform application is usable **out of the box** with technologies of the semantic
+web.
 
-Last but not least, Dunglas's API platform is built on top of [Symfony][5] full-stack
-and follows Symfony best practices. It means than you can:
+It also that **your SEO will be improved** because **[Google recommends these formats][28]**.
+And yes, Google crawls full-Javascript applications [as well as old-fashioned ones][29].
+
+Last but not least, Dunglas's API platform is built on top of the [Symfony][5]
+full-stack framework and follows its best practices. It means than you can:
 - use **thousands of Symfony bundles** with API platform
 - integrate API platform in **any existing Symfony application**
-- reuse all **your existing Symfony knowledge** and benefit from the incredible
+- reuse **all your Symfony skills** and benefit from the incredible
 number of Symfony documentation
-- enjoy the awesome [Doctrine ORM][6] (used by default, but fully optional: you can
-use the data provider you want, including but not limited to MongoDB ODM and ElasticSearch)
+- enjoy the popular [Doctrine ORM][6] (used by default, but fully optional: you can
+  use the data provider you want, including but not limited to MongoDB ODM and ElasticSearch)
 
 Install
 -------
@@ -48,9 +52,9 @@ Use [Composer][3] to create your new project:
 Start to hack
 -------------
 
-A default application representing a bookstore is installed by default.
+A demo application (a bookstore) is pre-installed.
 
-* Run `bin/console server:start` and open `http://localhost:8000` in any
+* Run `app/console server:start` and open `http://localhost:8000` in any
   HTTP client to access the API.
 * Open `http://localhost:8000/doc` to read the HTML documentation an play
   with the sandbox.
@@ -62,12 +66,14 @@ A default application representing a bookstore is installed by default.
 What's inside?
 --------------
 
-Dunglas's API platform provides rock solid fundations to build your API:
+Dunglas's API platform provides rock solid foundations to build your project:
 
   * The full power of the [**Symfony**][5] framework and its ecosystem;
 
   * **[Doctrine][6] ORM/DBAL**;
 
+  * [**PHP Schema**][7] to generate PHP entities from [Schema.org][8] types with Doctrine
+    ORM mappings, Symfony validation and extended PHPDoc.
 
   * [**DunglasJsonLdApiBundle**][9] to expose in minutes your entities as
     a JSON-LD and Hydra enabled hypermedia REST API.
@@ -75,9 +81,6 @@ Dunglas's API platform provides rock solid fundations to build your API:
   * [**NelmioApiDocBundle**][24] integrated with DunglasJsonLdApiBundle to
     automatically generate a beautiful human-readable documentation and a
     sandbox to test the API.
-
-  * [**PHP Schema**][7] to generate Doctrine entities (with Symfony
-    validation and extended PHPDoc) from [Schema.org][8] types.
 
   * [Behat][10] and [Behatch][11] configured to easily test the API.
 
@@ -144,12 +147,12 @@ Enjoy!
 Credits
 -------
 
-Built by [Kévin Dunglas][23].
+Built by [Kévin Dunglas][23]. Commercial support available upon request.
 
 [1]:  http://json-ld.org
 [2]:  http://hydra-cg.com
 [3]:  http://getcomposer.org
-[4]:  http://www.markus-lanthaler.com/hydra/
+[4]:  http://www.hydra-cg.com/
 [5]:  http://symfony.com
 [6]:  http://doctrine-project.org
 [7]:  http://php-schema.dunglas.com
@@ -173,3 +176,5 @@ Built by [Kévin Dunglas][23].
 [25]: http://jwt.io/
 [26]: http://oauth.net/
 [27]: http://en.wikipedia.org/wiki/Linked_data
+[28]: https://developers.google.com/structured-data/
+[29]: http://searchengineland.com/tested-googlebot-crawls-javascript-heres-learned-220157
