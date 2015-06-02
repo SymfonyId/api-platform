@@ -21,11 +21,11 @@ services:
         parent:    "api.resource"
         arguments: [ "AppBundle\\Entity\\Organization" ]
         calls:
-            -      [ "addFilter", [ "@resource.organization.filter" ] ]
+            -      [ "initFilters", [ [ "@resource.organization.filter" ] ] ]
         tags:      [ { name: "api.resource" } ]
 
     resource.organization.filter:
-        parent:    "api.doctrine.orm.filter"
+        parent:    "api.doctrine.orm.search_filter"
         arguments: [ { "name": "exact", "url": "partial" } ]
 
 # A typical service

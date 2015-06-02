@@ -1,11 +1,42 @@
 Dunglas's API platform
 ======================
 
-Welcome to Dunglas's API platform - a fully-functional Symfony2
-application that you can use as the skeleton to build a hypermedia
-and auto-discoverable REST API relying on internet standards.
+*The new bread of web frameworks*
 
-It provides [JSON-LD][1] and [Hydra][2] support out of the box.
+**The framework is still in development. The first public release is planned for
+the end of June 2015**
+
+Dunglas's API platform is a next-generation PHP web framework designed to create
+API-first projects easily but without compromise with extensibility and flexibility:
+- Use our awesome code generator to **bootstrap a fully-functional data model from
+[Schema.org][8] vocabularies** with ORM mapping and validation (you can also do it
+manually)
+- **Expose in minutes an hypermedia REST API** that works out of the box by taking care
+of entity metadata (ORM mapping and validation) ; that embraces [JSON-LD][1] and [Hydra][2]
+and provides a ton of features (CRUD, validation and error handling, relation
+embedding, filters, ordering...)
+- Enjoy the **beautiful automatically generated API documentation** (Swagger-like)
+- Add **[JWT][25] or [OAuth][26] authentication** to your API
+- Create tests with a **user friendly API testing system** on top of [Behat][10]
+- Develop your client applications using **your preferred technologies**! Tested and
+approved with **AngularJS** (integration included), **Ionic**, **React** and **native
+mobile** apps
+
+Dunglas's API platform embraces open web standards (JSON-LD, Hydra, JWT, OAuth,
+HTTP, HTML5...) and the [Linked Data][27] movement. It means than your Dunglas's
+API platform application is compliant **out of the box** with the semantic web.
+**Google will takes care automatically** of structured data exposed by the application
+(and yes, Google indexes full-Javascript applications as well as old-fashioned ones).
+Your SEO will be improved.
+
+Last but not least, Dunglas's API platform is built on top of [Symfony][5] full-stack
+and follows Symfony best practices. It means than you can:
+- use **thousands of Symfony bundles** with API platform
+- integrate API platform in **any existing Symfony application**
+- reuse all **your existing Symfony knowledge** and benefit from the incredible
+number of Symfony documentation
+- enjoy the awesome [Doctrine ORM][6] (used by default, but fully optional: you can
+use the data provider you want, including but not limited to MongoDB ODM and ElasticSearch)
 
 Install
 -------
@@ -139,3 +170,6 @@ Built by [Kévin Dunglas][23].
 [22]: https://github.com/FriendsOfSymfony/FOSOAuthServerBundle
 [23]: http://dunglas.fr
 [24]: https://github.com/nelmio/NelmioApiDocBundle
+[25]: http://jwt.io/
+[26]: http://oauth.net/
+[27]: http://en.wikipedia.org/wiki/Linked_data
